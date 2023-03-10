@@ -8,7 +8,7 @@ public class Product {
     DecimalFormat df = new DecimalFormat("########");
 
     //CAMPI
-    private static int code;
+    private final int code;
     private String name;
     private String description;
     private double price;
@@ -73,7 +73,7 @@ public class Product {
                 "code=" + code +
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
-                ", price=" + price +
+                ", price=" + price + "€" +
                 '}';
     }
 }
